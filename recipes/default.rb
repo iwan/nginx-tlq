@@ -40,7 +40,7 @@ end
 # open port 80
 bash "allowing nginx traffic through firewall" do
   user "root"
-  code "ufw allow 80 && ufw allow 443"
+  code "ufw allow 80 && ufw allow 443 && ufw allow 88"
 end
 
 execute "restart-nginx" do
